@@ -3,19 +3,25 @@
 [![Launch JupyterLab Binder](https://img.shields.io/badge/launch-JupyterLab-F5A252.svg?style=for-the-badge)](https://mybinder.org/v2/gh/kaedonkers/holepunch_example_small/main?urlpath=lab)
 <!-- badges: end -->
 
-# holepunch_example_small
-Example of using [holepunch](https://github.com/karthik/holepunch) to Binderise a small data analysis pipeline in R
+# Binder for reproducible analyses with R, Python and Jupyter
+Example for making 
 
+## Analysis 1: Script in RStudio
 
-## Analysis 1: Temperature vs maize yield
-
-For each of the provinces, correlate monthly temperature for June, July and August with annual maize yield.
+Temperature vs maize yield plots in an RStudio instance
 
 [![Analysis 1: RStudio Binder](https://img.shields.io/badge/Analysis1-Rstudio-579ACA.svg?style=for-the-badge)](https://mybinder.org/v2/gh/kaedonkers/holepunch_example_small/main?urlpath=rstudio&filepath=analysis/simple_plot.R)
 
 
-## Analysis 2: `mtcars` plot
+## Analysis 2: Jupyter Notebook running R
 
-Example plot using R's `mtcars` dataset.
+Example plot using R's `mtcars` dataset in a Juputer Notebook
 
 [![Analysis 2: JupyterLab Binder](https://img.shields.io/badge/Analysis2-JupyterLab-F5A252.svg?style=for-the-badge)](https://mybinder.org/v2/gh/kaedonkers/holepunch_example_small/main?urlpath=tree/analysis/mtcars_plot.ipynb)
+
+
+## Analysis 3: RMarkdown rendered as HTML
+
+Similar analysis to Analysis 2, but with some p'zazz.
+
+[![Analysis 2: JupyterLab Binder](https://img.shields.io/badge/Analysis2-JupyterLab-F5A252.svg?style=for-the-badge)](https://mybinder.org/v2/gh/kaedonkers/holepunch_example_small/main?urlpath=shiny/analysis/mtcars_plot.html)
