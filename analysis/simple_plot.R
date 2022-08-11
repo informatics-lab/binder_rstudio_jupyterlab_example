@@ -1,9 +1,14 @@
+# Simple plotting of example yield data #
+# ------------------------------------- #
+# 
+###### Setup ######
+
 library(tidyverse)
 library(ggplot2)
 library(patchwork)
 
-
 rm(list=ls())
+
 
 ###### Load data ######
 
