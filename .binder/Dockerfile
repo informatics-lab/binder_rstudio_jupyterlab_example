@@ -7,7 +7,6 @@ USER ${NB_USER}
 
 
 
-RUN wget https://github.com/kaedonkers/holepunch_example_small/raw/main/DESCRIPTION &&\
-    R -e "install.packages('renv'); renv::restore()"
+RUN wget https://github.com/kaedonkers/holepunch_example_small/raw/main/DESCRIPTION
 
 RUN rm DESCRIPTION.1; exit 0
