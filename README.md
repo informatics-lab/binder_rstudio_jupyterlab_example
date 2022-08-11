@@ -1,5 +1,5 @@
 <!-- badges: start -->
-[![Launch Rstudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/MetOffice/holepunch_example_small/master?urlpath=rstudio)
+[![Launch Rstudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/MetOffice/holepunch_example_small/main?urlpath=rstudio)
 <!-- badges: end -->
 
 # holepunch_example_small
