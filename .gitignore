@@ -41,3 +41,5 @@ vignettes/*.pdf
 # README renderings
 README.html
 README.pdf
+README.tex
+README.log
