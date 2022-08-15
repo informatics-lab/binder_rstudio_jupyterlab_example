@@ -22,7 +22,7 @@ Example plot using R's `mtcars` dataset in a Juputer Notebook
 
 ## ~~Analysis 3: RMarkdown rendered as HTML in Shiny app~~
 
-[![Analysis 3: RStudio Binder](https://img.shields.io/badge/3-RStudio-579ACA.svg?style=for-the-badge)](https://mybinder.org/v2/gh/kaedonkers/holepunch_example_small/main?urlpath=shiny/shiny)
+[![Analysis 3: RStudio Binder](https://img.shields.io/badge/3-RStudio-808080.svg?style=for-the-badge)](https://mybinder.org/v2/gh/kaedonkers/holepunch_example_small/main?urlpath=shiny/shiny)
 
 
 ## Analysis 4: Python Jupyter Notebook
