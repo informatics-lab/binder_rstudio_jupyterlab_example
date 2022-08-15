@@ -4,7 +4,7 @@
 <!-- badges: end -->
 
 # Binder for reproducible analyses with R, Python and Jupyter
-Example for making 
+Example for making a bunch of R and Python analyses available in a MyBinder instance.
 
 ## Analysis 1: Script in RStudio
 
