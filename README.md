@@ -17,7 +17,7 @@ Temperature vs maize yield plots in an RStudio instance
 
 Example plot using R's `mtcars` dataset in a Juputer Notebook
 
-[![Analysis 2: JupyterLab Binder](https://img.shields.io/badge/2-JupyterLab-F5A252.svg?style=for-the-badge)](https://mybinder.org/v2/gh/kaedonkers/holepunch_example_small/main?urlpath=tree/analysis/mtcars_plot.ipynb)
+[![Analysis 2: JupyterLab Binder](https://img.shields.io/badge/2-JupyterLab-F5A252.svg?style=for-the-badge)](https://mybinder.org/v2/gh/kaedonkers/holepunch_example_small/main?urlpath=tree/analysis-2/mtcars_plot.ipynb)
 
 
 ## ~~Analysis 3: RMarkdown rendered as HTML in Shiny app~~
@@ -27,4 +27,4 @@ Example plot using R's `mtcars` dataset in a Juputer Notebook
 
 ## Analysis 4: Python Jupyter Notebook
 
-[![Analysis 4: JupyterLab Binder](https://img.shields.io/badge/4-JupyterLab-F5A252.svg?style=for-the-badge)](https://mybinder.org/v2/gh/kaedonkers/holepunch_example_small/main?filepath=iris_add_season_year_preceeding.ipynb)
+[![Analysis 4: JupyterLab Binder](https://img.shields.io/badge/4-JupyterLab-F5A252.svg?style=for-the-badge)](https://mybinder.org/v2/gh/kaedonkers/holepunch_example_small/main?filepath=analysis-4/iris_add_season_year_preceeding.ipynb)
