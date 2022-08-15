@@ -1,4 +1,2 @@
-# Use renv to install a full manifest of packages
-# install.packages('renv')
-# renv::restore(prompt=FALSE)
+# Install R packages at build time install.packages() syntax
 
