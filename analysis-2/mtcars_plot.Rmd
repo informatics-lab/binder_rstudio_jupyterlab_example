@@ -5,7 +5,7 @@ output: html_document
 # This is a title
 
 
-This is a plot, innit.
+## This is a plot, innit.
 
 ```{r echo=FALSE}
 library(tidyverse)
@@ -16,7 +16,11 @@ ggplot(mtcars, aes(x=cyl, y=mpg)) + geom_point()
 ```
 
 
-Funky widgets, maaaaaan!
+```{r echo=TRUE}
+plot(cars)
+```
+
+## Funky widgets, maaaaaan!
 ```{r echo = FALSE}
 selectInput("n_breaks", label = "Number of wheelie bins:",
               choices = c(10, 20, 35, 50), selected = 20)
