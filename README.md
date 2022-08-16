@@ -8,6 +8,11 @@ This repo is an example of making a bunch of R and Python analyses available in 
 
 Click the badges above to launch a live, interactive Jupyter Lab or RStudio session in your browser. Execute the notebooks/scripts, edit them, create new ones and upload your own data to analyse. 
 
+You can also launch each of the analyses from the Jupyter Lab (Analyses 2 & 4) file browser, or select RStudio (Analysis 1) and Shiny (Analysis 3) from the launcher:
+
+<img src="img/file_browser.png" height="150"> <img src="img/launcher.png" height="150">
+
+
 The sessions last for as long as you are using them and will disappear once you are inactive for 5-10 minutes. Any unsaved progress will disappear (each session starts with exactly what is in this repo), so if you want to save any progress/edits you make you will need to download them to your computer.
 
 This repo was broadly constructed following this [Zero-to-Binder](https://the-turing-way.netlify.app/communication/binder/zero-to-binder.html) tutorial in The Turing Way docs. I followed both the Python and R setups. I would not recommend using the `holepunch` package to setup an R Binder as the projecct has been unmaintained for over two years and when I used it failed to create a working Dockerfile. In fact, the method I settled on (described in this repo) does not define a Dockerfile at all, instead leaning on the excellent work of the [`repo2docker`](https://github.com/jupyterhub/repo2docker) folks which now have a very slick system for creating Docker and Binder instances from a GitHub repository. Kudos to them and their work.
