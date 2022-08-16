@@ -4,23 +4,22 @@ output: html_document
 ---
 # This is a title
 
-
-## This is a plot, innit.
-
-```{r echo=FALSE}
+```{r echo=FALSE warning=FALSE}
 library(tidyverse)
 ```
+
+## This is a plot, innit.
 
 ```{r echo=TRUE}
 ggplot(mtcars, aes(x=cyl, y=mpg)) + geom_point()
 ```
 
-
+So it this.
 ```{r echo=TRUE}
 plot(cars)
 ```
 
-## Funky widgets, maaaaaan!
+## Funky widgets, maaaaaan! 🤘
 ```{r echo = FALSE}
 selectInput("n_breaks", label = "Number of wheelie bins:",
               choices = c(10, 20, 35, 50), selected = 20)
