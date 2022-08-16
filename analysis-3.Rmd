@@ -4,7 +4,7 @@ output: html_document
 ---
 # This is a title
 
-```{r echo=FALSE warning=FALSE}
+```{r echo=FALSE, message=FALSE}
 library(tidyverse)
 ```
 
