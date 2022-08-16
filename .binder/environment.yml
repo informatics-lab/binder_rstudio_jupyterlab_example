@@ -2,4 +2,6 @@ channels:
   - conda-forge
 
 dependencies:
-  - iris
+  - pandas
+  - matplotlib
+  - seaborn
