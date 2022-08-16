@@ -2,22 +2,7 @@
 runtime: shiny
 output: html_document
 ---
-# This is a title
-
-```{r echo=FALSE, message=FALSE}
-library(tidyverse)
-```
-
-## This is a plot, innit.
-
-```{r echo=TRUE}
-ggplot(mtcars, aes(x=cyl, y=mpg)) + geom_point()
-```
-
-So it this.
-```{r echo=TRUE}
-plot(cars)
-```
+# Analysis 3: RMarkdown notebook rendered in RShiny with interactive widgets
 
 ## Funky widgets, maaaaaan! 🤘
 ```{r echo = FALSE}
@@ -27,3 +12,98 @@ selectInput("n_breaks", label = "Number of wheelie bins:",
 sliderInput("bw_adjust", label = "Bandwidth ... width:",
               min = 0.2, max = 2, value = 1, step = 0.2)
 ```
+
+```{r echo=FALSE, message=FALSE}
+library(tidyverse)
+library(ggplot2)
+library(patchwork)
+```
+
+## This is a plot, innit.
+```{r echo=TRUE}
+plot(cars)
+```
+
+## Here is the same analysis done in the other notebooks
+
+Load the data in `data/`:
+```{r echo=TRUE}
+indir = 'data/'
+
+fname_1 = 'Sep2021_Liaoning_data.csv'
+fname_2 = 'Sep2021_Jilin_data.csv'
+fname_3 = 'Sep2021_Heilongjiang_data.csv'
+
+provs = c("Liaoning", "Jilin", "Heilongjiang")
+
+yield_1 = read.csv(paste(indir,fname_1, sep=""), header = TRUE,sep = ",", stringsAsFactors = FALSE)
+yield_2 = read.csv(paste(indir,fname_2, sep=""), header = TRUE,sep = ",", stringsAsFactors = FALSE)
+yield_3 = read.csv(paste(indir,fname_3, sep=""), header = TRUE,sep = ",", stringsAsFactors = FALSE)
+```
+
+Create a function that creates the plots:
+```{r echo=TRUE}
+scatter_trend_plot = function(data, x, y, title, xlab="var", ylab="Normalised maize yield", method=lm) {
+  plot = ggplot(data=data, aes(x={{x}}, y={{y}})) +
+    geom_point() +
+    geom_smooth(method={{method}}) +
+    labs(title=title, x=xlab, y=ylab)
+  return(plot)
+}
+```
+
+Generate the plots for each of the datasets:
+```{r echo=TRUE}
+ljun = scatter_trend_plot(data=yield_1, 
+                          x=Jun.T, 
+                          y=Maize.yield.anomaly, 
+                          title=provs[1], 
+                          xlab="June Temperature / degrees C",)
+ljul = scatter_trend_plot(data=yield_1, 
+                          x=Jul.T, 
+                          y=Maize.yield.anomaly, 
+                          title=provs[1], 
+                          xlab="July Temperature / degrees C",)
+laug = scatter_trend_plot(data=yield_1, 
+                          x=Aug.T, 
+                          y=Maize.yield.anomaly, 
+                          title=provs[1], 
+                          xlab="August Temperature / degrees C",)
+jjun = scatter_trend_plot(data=yield_2, 
+                          x=Jun.T, 
+                          y=Maize.yield.anomaly, 
+                          title=provs[2], 
+                          xlab="June Temperature / degrees C",)
+jjul = scatter_trend_plot(data=yield_2, 
+                          x=Jul.T, 
+                          y=Maize.yield.anomaly, 
+                          title=provs[2], 
+                          xlab="July Temperature / degrees C",)
+jaug = scatter_trend_plot(data=yield_2, 
+                          x=Aug.T, 
+                          y=Maize.yield.anomaly, 
+                          title=provs[2], 
+                          xlab="August Temperature / degrees C",)
+hjun = scatter_trend_plot(data=yield_3, 
+                          x=Jun.T, 
+                          y=Maize.yield.anomaly, 
+                          title=provs[3], 
+                          xlab="June Temperature / degrees C",)
+hjul = scatter_trend_plot(data=yield_3, 
+                          x=Jul.T, 
+                          y=Maize.yield.anomaly, 
+                          title=provs[3], 
+                          xlab="July Temperature / degrees C",)
+haug = scatter_trend_plot(data=yield_3, 
+                          x=Aug.T, 
+                          y=Maize.yield.anomaly, 
+                          title=provs[3], 
+                          xlab="August Temperature / degrees C",)
+```
+
+Then assemble the plots together using `patchwork`
+```{r echo=TRUE}
+(ljun+ljul+laug)/(jjun+jjul+jaug)/(hjun+hjul+haug)
+```
+
+
