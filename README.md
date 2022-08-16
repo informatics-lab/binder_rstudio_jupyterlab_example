@@ -12,14 +12,14 @@ Temperature vs maize yield plots in an RStudio instance
 
 (Badge simply opens RStudio, not the specific file within the RStudio session 😢)
 
-[![Analysis 1: RStudio Binder](https://img.shields.io/badge/1-Rstudio-808080.svg?style=for-the-badge)](https://mybinder.org/v2/gh/informatics-lab/binder_rstudio_jupyterlab_example/main?urlpath=rstudio&filepath=analysis/simple_plot.R)
+[![Analysis 1: RStudio Binder](https://img.shields.io/badge/1-Rstudio-808080.svg?style=for-the-badge)](https://mybinder.org/v2/gh/informatics-lab/binder_rstudio_jupyterlab_example/main?urlpath=rstudio/analysis-1.R)
 
 
 ## Analysis 2: Jupyter Notebook opening a specific Notebook running R
 
 Example plot using R's `mtcars` dataset in a Juputer Notebook
 
-[![Analysis 2: JupyterLab Binder](https://img.shields.io/badge/2-JupyterLab-F5A252.svg?style=for-the-badge)](https://mybinder.org/v2/gh/informatics-lab/binder_rstudio_jupyterlab_example/main?urlpath=tree/analysis-2/mtcars_plot.ipynb)
+[![Analysis 2: JupyterLab Binder](https://img.shields.io/badge/2-JupyterLab-F5A252.svg?style=for-the-badge)](https://mybinder.org/v2/gh/informatics-lab/binder_rstudio_jupyterlab_example/main?filepath=analysis-2.ipynb)
 
 
 ## Analysis 3: RMarkdown notebook rendered as HTML in a Shiny app
@@ -29,4 +29,4 @@ Example plot using R's `mtcars` dataset in a Juputer Notebook
 
 ## Analysis 4: Jupyter Lab opening a specific Notebook running Python
 
-[![Analysis 4: JupyterLab Binder](https://img.shields.io/badge/4-JupyterLab-F5A252.svg?style=for-the-badge)](https://mybinder.org/v2/gh/informatics-lab/binder_rstudio_jupyterlab_example/main?filepath=analysis-4/iris_add_season_year_preceeding.ipynb)
+[![Analysis 4: JupyterLab Binder](https://img.shields.io/badge/4-JupyterLab-F5A252.svg?style=for-the-badge)](https://mybinder.org/v2/gh/informatics-lab/binder_rstudio_jupyterlab_example/main?labpath=analysis-4/iris_add_season_year_preceeding.ipynb)
