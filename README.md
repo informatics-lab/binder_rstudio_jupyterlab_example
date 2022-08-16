@@ -6,7 +6,7 @@
 # Binder for reproducible analyses with R, Python and Jupyter
 Example for making a bunch of R and Python analyses available in a MyBinder instance.
 
-~~## Analysis 1: RStudio openning a specific script~~
+## ~~Analysis 1: RStudio openning a specific script~~
 
 Temperature vs maize yield plots in an RStudio instance
 
