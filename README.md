@@ -22,11 +22,10 @@ Example plot using R's `mtcars` dataset in a Juputer Notebook
 
 ## ~~Analysis 3: RMarkdown rendered as HTML in Shiny app~~
 
-[![Analysis 3: RStudio Binder](https://img.shields.io/badge/3-RStudio-808080.svg?style=for-the-badge)](https://mybinder.org/v2/gh/informatics-lab/binder_rstudio_jupyterlab_example/main?urlpath=rstudio&view=rmarkdown)
+[![Analysis 3: RStudio Binder](https://img.shields.io/badge/3-folder-808080.svg?style=for-the-badge)](https://mybinder.org/v2/gh/informatics-lab/binder_rstudio_jupyterlab_example/main?urlpath=shiny/analysis-3/)
 
-[![Analysis 3: RStudio Binder](https://img.shields.io/badge/3-RStudio-808080.svg?style=for-the-badge)](https://mybinder.org/v2/gh/informatics-lab/binder_rstudio_jupyterlab_example/main?urlpath=rstudio/rmarkdown)
+[![Analysis 3: RStudio Binder](https://img.shields.io/badge/3-maindir-808080.svg?style=for-the-badge)](https://mybinder.org/v2/gh/informatics-lab/binder_rstudio_jupyterlab_example/main?urlpath=shiny)
 
-[![Analysis 3: RStudio Binder](https://img.shields.io/badge/3-RStudio-808080.svg?style=for-the-badge)](https://mybinder.org/v2/gh/informatics-lab/binder_rstudio_jupyterlab_example/main?urlpath=rmarkdown)
 
 
 ## Analysis 4: Python Jupyter Notebook
