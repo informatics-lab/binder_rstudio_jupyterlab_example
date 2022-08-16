@@ -4,7 +4,7 @@ output: html_document
 ---
 # Analysis 3: RMarkdown notebook rendered in RShiny with interactive widgets
 
-## Funky widgets, maaaaaan! 🤘
+## Funky interactive widgets, maaaaaan! 🤘
 ```{r echo = FALSE}
 selectInput("n_breaks", label = "Number of wheelie bins:",
               choices = c(10, 20, 35, 50), selected = 20)
@@ -17,11 +17,6 @@ sliderInput("bw_adjust", label = "Bandwidth ... width:",
 library(tidyverse)
 library(ggplot2)
 library(patchwork)
-```
-
-## This is a plot, innit.
-```{r echo=TRUE}
-plot(cars)
 ```
 
 ## Here is the same analysis done in the other notebooks
@@ -102,7 +97,7 @@ haug = scatter_trend_plot(data=yield_3,
 ```
 
 Then assemble the plots together using `patchwork`
-```{r echo=TRUE}
+```{r echo=TRUE, message=FALSE, warning=FALSE}
 (ljun+ljul+laug)/(jjun+jjul+jaug)/(hjun+hjul+haug)
 ```
 
