@@ -84,6 +84,6 @@ MyBinder requirements:
  - [`.binder/environment.yml`](https://repo2docker.readthedocs.io/en/latest/config_files.html#environment-yml-install-a-conda-environment) to define the **extra** packages to be installed using [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file). The base `repo2docker` infrastructure already installs `python`, `jupyter`, `IPython`, `ipykernel`, etc. so the user simply uses this file to define the packages needed in their analyses/code.
 
 ## References
-Jupyter et al., "Binder 2.0 - Reproducible, Interactive, Sharable Environments for Science at Scale." Proceedings of the 17th Python in Science Conference. 2018. doi://10.25080/Majora-4af1f417-011
+Jupyter et al., "Binder 2.0 - Reproducible, Interactive, Sharable Environments for Science at Scale." Proceedings of the 17th Python in Science Conference. 2018. [doi://10.25080/Majora-4af1f417-011](https://doi.org/10.25080/Majora-4af1f417-011)
 
 Copernicus Climate Change Service (C3S) (2017): ERA5: Fifth generation of ECMWF atmospheric reanalyses of the global climate . Copernicus Climate Change Service Climate Data Store (CDS), date of access. https://cds.climate.copernicus.eu/cdsapp#!/home
